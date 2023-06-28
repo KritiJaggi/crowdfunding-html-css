@@ -1,0 +1,126 @@
+/*
+	Please add your custom CSS in this file. The hex codes for the colours are below.
+
+	Main text color (grey): #838383
+	Dark grey for the speech bubble at the top: #424242
+	Grey border colour for the main content area, and the buttons at the bottom: #DCDCDC
+	Orange colour for the highlighted "only 3 days left" text and the progress bar: #F15E33
+	The background for the part of the progress bar that isn't filled in: #FAFAFA
+	Buttons at the bottom: #838383
+	Green button: #00BE1C
+	Green button border: #01B21A
+	"Why give 50" link: #25A5D8
+*/
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+  }
+.crowdfunding-widget {
+	text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid #000; 
+  border-bottom: none; 
+  border-radius: 5px; 
+  
+  }
+
+  .crowdfunding-widget .button-section {
+	margin-top: 20px;
+	border-top: 1px solid #000; /* Add border to the top of the button section */
+	padding-top: 10px; /* Add padding to separate the buttons from the border */
+  }
+  
+  .progress-bar {
+	background-color: #e0e0e0;
+	height: 20px;
+	margin-bottom: 10px;
+	position: relative;
+	cursor: pointer;
+  }
+  
+  .progress {
+	background-color: #42b983;
+	height: 100%;
+	width: 75%; /* Initial progress set to 75% */
+  }
+  
+  .tooltip {
+	position: absolute;
+	top: -30px;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	padding: 5px 10px;
+	font-size: 14px;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+  }
+  
+  .progress-bar:hover .tooltip {
+	opacity: 1;
+  }
+  
+  .message {
+	font-size: 16px;
+	margin-bottom: 10px;
+  }
+  
+  .donation-section {
+	position: relative;
+	margin-bottom: 10px;
+  }
+
+  .donation-input {
+	position: absolute;
+	width: 10%;
+	left: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 20px;
+	font-size: 16px;
+	color: #999;
+	pointer-events: none; /* Prevent user interaction */
+	border: 0px;
+  }
+  
+  .amount-input {
+	width: 27%;
+	padding-left: 25px; 
+	margin-left: 27px;
+	float: left;
+	font-size: 16px;/* Add left padding to accommodate the £ sign */
+  }
+  
+  .donate-button {
+	padding: 5px 10px;
+	background-color: #42b983;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	margin-left: 10px;
+	
+  }
+  
+  .why-give {
+	font-size: 14px;
+	margin-bottom: 10px;
+	text-align: left;
+	margin-left: 27px;
+  }
+  
+  .button-section {
+	margin-top: 20px;
+  }
+  
+  .save-button,
+  .share-button {
+	padding: 5px 10px;
+	background-color: #42b983;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	margin-right: 10px;
+  }
