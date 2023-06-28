@@ -2,28 +2,31 @@
 	<head>
 		<title>HTML / CSS Code test</title>
 		<link rel="stylesheet" href="./style.css">
-		<script type="text/javascript" src="./script.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<div class="container">
 		<div class="crowdfunding-widget">
+			<div class="addboundary">
 			<div class="progress-bar">
 			  <div class="progress"></div>
 			  <div class="tooltip">256 pounds left to reach target</div>
 			</div>
 			<p class="message">
-				<strong>Only 3 days left</strong> to fund this project.
+				<strong class="daysleft">Only 3 days left</strong> to fund this project.
 			</p>
 			<p>
-				Join the <strong>56</strong> other donors who have already supported this project. Every penny helps.
+				Join the <strong >56</strong> other donors who have already supported this project. Every penny helps.
 			</p>
 			<div class="donation-section">
 				<input type="text" class="donation-input" value="£" readonly>
     			<input type="number" class="amount-input" placeholder="    50">
-    			<button class="donate-button">Donate</button>
+    			<button class="donate-button">Give now</button>
 			</div>
-			<p class="why-give">Why give $50?</p>
+			<p class="why-give">
+				<a href="#" class="why-give-link">Why give £50?</a>
+			</p>
+		</div>
 			<div class="button-section">
 			  <button class="save-button">Save for Later</button>
 			  <button class="share-button">Tell Your Friends</button>

@@ -1,7 +1,7 @@
 /*
 	Please add your custom CSS in this file. The hex codes for the colours are below.
 
-	Main text color (grey): #838383
+	Main text color (grey): #838383-- done
 	Dark grey for the speech bubble at the top: #424242
 	Grey border colour for the main content area, and the buttons at the bottom: #DCDCDC
 	Orange colour for the highlighted "only 3 days left" text and the progress bar: #F15E33
@@ -11,27 +11,40 @@
 	Green button border: #01B21A
 	"Why give 50" link: #25A5D8
 */
+body {
+	color: 838383;
+}
 .container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
   }
+
+.addboundary {
+	border: 2px solid black;
+}
 .crowdfunding-widget {
 	text-align: center;
   width: 300px;
   margin: 0 auto;
-  border: 1px solid #000; 
+  /* border: 1px solid #000;  */
   border-bottom: none; 
   border-radius: 5px; 
   
   }
 
-  .crowdfunding-widget .button-section {
+  .button-section {
+	display: flex;
+	justify-content: flex-end;
 	margin-top: 20px;
-	border-top: 1px solid #000; /* Add border to the top of the button section */
-	padding-top: 10px; /* Add padding to separate the buttons from the border */
   }
+  
+  .button-section button {
+	flex: 1;
+	margin: 0 5px;
+  }
+  
   
   .progress-bar {
 	background-color: #e0e0e0;
@@ -42,16 +55,16 @@
   }
   
   .progress {
-	background-color: #42b983;
+	background-color: #F15E33;
 	height: 100%;
-	width: 75%; /* Initial progress set to 75% */
+	width: 75%; /* Initial progress set to 75% for default since no javascript*/
   }
   
   .tooltip {
 	position: absolute;
 	top: -30px;
 	left: 0;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: #424242;
 	color: #fff;
 	padding: 5px 10px;
 	font-size: 14px;
@@ -96,9 +109,9 @@
   
   .donate-button {
 	padding: 5px 10px;
-	background-color: #42b983;
+	background-color:  #00BE1C;
 	color: #fff;
-	border: none;
+	border: #01B21A;
 	cursor: pointer;
 	margin-left: 10px;
 	
@@ -111,16 +124,17 @@
 	margin-left: 27px;
   }
   
-  .button-section {
-	margin-top: 20px;
-  }
   
   .save-button,
   .share-button {
 	padding: 5px 10px;
-	background-color: #42b983;
+	background-color: 838383;
 	color: #fff;
 	border: none;
 	cursor: pointer;
 	margin-right: 10px;
+  }
+
+  .daysleft {
+	color: #F15E33;
   }
