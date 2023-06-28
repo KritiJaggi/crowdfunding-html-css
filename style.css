@@ -11,50 +11,57 @@
 	Green button border: #01B21A
 	"Why give 50" link: #25A5D8
 */
-body {
+body { 
+	/*for text in all html body for uiformity*/
 	color: 838383;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-a {
+a { 
+	/*for all links in the html*/
 	color: #25A5D8;
 	text-decoration: none;
 	font-style: italic;
   }
   
-.container {
+.container { 
+	/*contains entire widget*/
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
   }
 
-.addboundary {
+  .crowdfunding-widget {
+	/*contains entire widget*/
+	text-align: center;
+	width: 300px;
+	margin: 0 auto;
+	border-bottom: none; 
+	border-radius: 5px; 
+	
+	}
+.addboundary { 
+	/*contains widget until the bottom 2 buttons, used to add border to separate donation information to saving/ sharing info */
 	border: 2px solid #838383;
 }
-.crowdfunding-widget {
-	text-align: center;
-  width: 300px;
-  margin: 0 auto;
-  /* border: 1px solid #000;  */
-  border-bottom: none; 
-  border-radius: 5px; 
-  
-  }
 
   .button-section {
+	/* container for both the buttons at the bottom*/
 	display: flex;
 	justify-content: flex-end;
 	margin-top: 20px;
   }
   
   .button-section button {
+	/* Targets each of the buttons at the bottom individually*/
 	flex: 1;
 	margin: 0 5px;
   }
   
   
   .progress-bar {
+
 	background-color: #e0e0e0;
 	height: 20px;
 	margin-bottom: 10px;
@@ -63,12 +70,14 @@ a {
   }
   
   .progress {
+
 	background-color: #F15E33;
 	height: 100%;
-	width: 75%; /* Initial progress set to 75% for default since no javascript*/
+	width: 75%; /* Initial progress set to 75% for default since no javascript, will need to change when adding dynamic details*/
   }
   
   .tooltip {
+
 	position: absolute;
 	top: -30px;
 	left: 0;
@@ -81,11 +90,13 @@ a {
 	
   }
   
-  .progress-bar:hover .tooltip {
+  .progress-bar:hover .tooltip 
+  {
 	opacity: 1;
   }
   
   .message {
+	/* for both the text bodies of the widget (indivdually sice different div for both text bodies but same class)*/
 	font-size: 16px;
 	margin-bottom: 10px;
 	text-align:left;
@@ -93,6 +104,7 @@ a {
   }
   
   .donation-section {
+	/* entire donation section, the input and button*/
 	position: relative;
 	margin-bottom: 10px;
 	display: flex;
@@ -102,6 +114,7 @@ a {
   }
 
   .donation-input {
+	/* for the fixed £ sign */
 	position: absolute;
 	width: 10%;
 	left: 15px;
@@ -115,6 +128,7 @@ a {
   }
   
   .amount-input {
+	/* for inputting custom amount of donation only numeric values allowed */
 	width: 30%;
 	padding-left: 24px; 
 	margin-left: 27px;
@@ -123,6 +137,7 @@ a {
   }
   
   .donate-button {
+	/* give now button stying*/
 	padding: 5px 10px;
 	background-color:  #00BE1C;
 	color: #fff;
@@ -135,6 +150,7 @@ a {
   }
   
   .why-give {
+	/* stying the hyperlink without affecting all links of the document*/
 	font-size: 14px;
 	margin-bottom: 10px;
 	text-align: left;
@@ -144,6 +160,7 @@ a {
 
   .save-button,
   .share-button {
+	/* individual buttons at the bottom*/
 	padding: 5px 10px;
 	height: 35px;
 	color: #838383;
@@ -153,5 +170,6 @@ a {
   }
 
   .daysleft {
+	/* highlighting the number of days left for donations*/
 	color: #F15E33;
   }
