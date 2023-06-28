@@ -15,6 +15,13 @@ body {
 	color: 838383;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+a {
+	color: #25A5D8;
+	text-decoration: none;
+	font-style: italic;
+  }
+  
 .container {
 	display: flex;
 	align-items: center;
@@ -71,6 +78,7 @@ body {
 	font-size: 14px;
 	opacity: 0;
 	transition: opacity 0.3s ease;
+	
   }
   
   .progress-bar:hover .tooltip {
@@ -87,6 +95,10 @@ body {
   .donation-section {
 	position: relative;
 	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 20px;
+	
   }
 
   .donation-input {
@@ -96,18 +108,18 @@ body {
 	top: 50%;
 	transform: translateY(-50%);
 	margin-left: 20px;
-	font-size: 16px;
+	font-size: 20px;
 	color: #999;
 	pointer-events: none; /* Prevent user interaction */
 	border: 0px;
   }
   
   .amount-input {
-	width: 27%;
-	padding-left: 25px; 
+	width: 30%;
+	padding-left: 24px; 
 	margin-left: 27px;
 	float: left;
-	font-size: 16px;/* Add left padding to accommodate the £ sign */
+	font-size: 20px;/* Add left padding to accommodate the £ sign */
   }
   
   .donate-button {
@@ -116,7 +128,9 @@ body {
 	color: #fff;
 	border: #01B21A;
 	cursor: pointer;
+	line-height: 25px;
 	margin-left: 10px;
+	font-size: 20px;
 	
   }
   
@@ -125,15 +139,15 @@ body {
 	margin-bottom: 10px;
 	text-align: left;
 	margin-left: 27px;
+	
   }
-  
-  
+
   .save-button,
   .share-button {
 	padding: 5px 10px;
-	background-color: 838383;
-	color: #fff;
-	border: none;
+	height: 35px;
+	color: #838383;
+	border: darkgrey;
 	cursor: pointer;
 	margin-right: 10px;
   }
